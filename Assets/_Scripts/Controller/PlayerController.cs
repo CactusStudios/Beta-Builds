@@ -10,12 +10,14 @@ public class PlayerController : MonoBehaviour {
 
     private Animator anim;
 
+
     private bool isMoving;
     private Vector2 lastMove;
 
 	// Use this for initialization
 	void Start () {
         anim = GetComponent<Animator>();
+
 	}
 	
 	// Update is called once per frame
