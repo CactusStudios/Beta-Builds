@@ -70,9 +70,9 @@ MonoBehaviour:
     minimum: 5
     maximum: 9
   floorTiles:
-  - {fileID: 1351614512713032, guid: 9812326d2a8a90c448e0ae6cef276f03, type: 2}
+  - {fileID: 1531401157797994, guid: 92864ffe894aeb74a9cb8d03b9cd0fc4, type: 2}
   wallTiles:
-  - {fileID: 1395847498780398, guid: 40509ad22e44cbf4e8c2c954c12ea15c, type: 2}
-  - {fileID: 1595108634834550, guid: 584542d8c64c1a24f88ab46e1a40ee67, type: 2}
+  - {fileID: 1156685589983070, guid: 584542d8c64c1a24f88ab46e1a40ee67, type: 2}
+  - {fileID: 1984866976598680, guid: 54dad0fcab7d1c440b02c2c38d1a36d5, type: 2}
   outerWallTiles:
-  - {fileID: 1595108634834550, guid: 584542d8c64c1a24f88ab46e1a40ee67, type: 2}
+  - {fileID: 1156685589983070, guid: 584542d8c64c1a24f88ab46e1a40ee67, type: 2}
