@@ -17,8 +17,18 @@ public class GameManager : MonoBehaviour {
 	void initGame(){
 		boardScript.SetupScene (1);
 	}
+
+	void reset(){
+		boardScript.Deactivate();
+		boardScript.SetupScene (1);
+	}
+
+
 	// Update is called once per frame
 	void Update () {
-		
+
+		if (Input.GetKeyDown ("p")) {
+			reset ();
+		}
 	}
 }
