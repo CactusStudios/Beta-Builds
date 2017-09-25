@@ -13,14 +13,15 @@ public class GameManager : MonoBehaviour {
 		initGame ();
 	}
 
-
 	void initGame(){
 		boardScript.SetupScene (1);
+		Debug.Log ("Board Created");
 	}
 
 	void reset(){
 		boardScript.Deactivate();
 		boardScript.SetupScene (1);
+		Debug.Log ("Board Reset");
 	}
 
 
@@ -28,7 +29,9 @@ public class GameManager : MonoBehaviour {
 	void Update () {
 
 		if (Input.GetKeyDown ("p")) {
+			Debug.Log ("Reset Called");
 			reset ();
+
 		}
 	}
 }

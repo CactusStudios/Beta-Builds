@@ -12,13 +12,11 @@ public class PlayerController : MonoBehaviour {
 
 
     private bool isMoving;
-	private bool canMove;
     private Vector2 lastMove;
 
 	// Use this for initialization
 	void Start () {
         anim = GetComponent<Animator>();
-		canMove = true;
 
 	}
 	
@@ -29,19 +27,17 @@ public class PlayerController : MonoBehaviour {
 
         //Player Movement
 
-		if (canMove) {
-
-			if (Input.GetAxisRaw ("Horizontal") > 0f || Input.GetAxisRaw ("Horizontal") < 0f) {
-				transform.Translate (new Vector3 (Input.GetAxisRaw ("Horizontal") * moveSpeed * Time.deltaTime, 0f, 0f));
-				isMoving = true;
-				lastMove = new Vector2 (Input.GetAxisRaw ("Horizontal"), 0f);
-			}
-			if (Input.GetAxisRaw ("Vertical") > 0f || Input.GetAxisRaw ("Vertical") < 0f) {
-				transform.Translate (new Vector3 (0f, Input.GetAxisRaw ("Vertical") * moveSpeed * Time.deltaTime, 0f));
-				isMoving = true;
-				lastMove = new Vector2 (0f, Input.GetAxisRaw ("Vertical"));
-
-			}
+		if (Input.GetAxisRaw ("Horizontal") > 0f || Input.GetAxisRaw ("Horizontal") < 0f) {
+			transform.Translate (new Vector3 (Input.GetAxisRaw ("Horizontal") * moveSpeed * Time.deltaTime, 0f, 0f));
+			isMoving = true;
+			lastMove = new Vector2 (Input.GetAxisRaw ("Horizontal"), 0f);
+			Debug.Log ("Move x");
+		}
+		if (Input.GetAxisRaw ("Vertical") > 0f || Input.GetAxisRaw ("Vertical") < 0f) {
+			transform.Translate (new Vector3 (0f, Input.GetAxisRaw ("Vertical") * moveSpeed * Time.deltaTime, 0f));
+			isMoving = true;
+			lastMove = new Vector2 (0f, Input.GetAxisRaw ("Vertical"));
+			Debug.Log ("Move y");
 		}
 
 		//sets direction for when the player stops moving

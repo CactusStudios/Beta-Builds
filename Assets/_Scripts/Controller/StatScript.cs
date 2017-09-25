@@ -21,17 +21,17 @@ public class StatScript : MonoBehaviour {
 
 			if (Input.GetKeyDown (KeyCode.K)) {
 				setHealth (10);
+				Debug.Log("Health Loss");
 			}
 
 			if (Input.GetKeyDown (KeyCode.F)) {
 				setMana (10);
+				Debug.Log("Mana Loss");
 			}
 		} else {
 				Debug.Log("Dead");
 				health = 100;
 		}
-
-
 
 	}
 
