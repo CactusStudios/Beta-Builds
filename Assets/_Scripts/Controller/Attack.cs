@@ -18,7 +18,7 @@ public class Attack : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetMouseButton(0))
+		if (Input.GetMouseButton(0)) //LMB
 		{
 
 			Vector2 target = Camera.main.ScreenToWorldPoint (new Vector2 (Input.mousePosition.x, Input.mousePosition.y));
@@ -28,6 +28,7 @@ public class Attack : MonoBehaviour {
 			Vector2 direction = target - myPosition;
 			direction.Normalize ();
 
+			//rotates based obn the direction the bullet is flying
 			Quaternion rotation = Quaternion.Euler (0, 0, Mathf.Atan2 (direction.y, direction.x) * Mathf.Rad2Deg-45);
 
 			
@@ -37,10 +38,14 @@ public class Attack : MonoBehaviour {
 					bulletPrefab,
 					myPosition, rotation);
 				
+				Debug.Log("Bullet Fired");
 
 
 				// Add velocity to the bullet
 				bullet.GetComponent<Rigidbody2D> ().velocity = direction/*Input.mousePosition*/ * bulletSpeed;
+				Debug.Log("Bullet leaving towards direction");
+
+
 
 
 			// Destroy the bullet after 2 seconds
