@@ -19,8 +19,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4111625543299848}
-  - component: {fileID: 114496203321490478}
   - component: {fileID: 114115231464051708}
+  - component: {fileID: 114802648955140334}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -52,8 +52,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3654fbcc7ba279148ad4c7a28f3d2a7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boardScript: {fileID: 114496203321490478}
---- !u!114 &114496203321490478
+  boardScript: {fileID: 114802648955140334}
+--- !u!114 &114802648955140334
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -61,18 +61,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 1722953094591630}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2396a69af29ad14aa67f91cc4b86e51, type: 3}
+  m_Script: {fileID: 11500000, guid: 549ce87e37464c84fbed826f805357b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  columns: 16
-  rows: 16
-  wallCount:
-    minimum: 5
-    maximum: 9
-  floorTiles:
-  - {fileID: 1531401157797994, guid: 92864ffe894aeb74a9cb8d03b9cd0fc4, type: 2}
-  wallTiles:
-  - {fileID: 1156685589983070, guid: 584542d8c64c1a24f88ab46e1a40ee67, type: 2}
-  - {fileID: 1984866976598680, guid: 54dad0fcab7d1c440b02c2c38d1a36d5, type: 2}
-  outerWallTiles:
-  - {fileID: 1156685589983070, guid: 584542d8c64c1a24f88ab46e1a40ee67, type: 2}
+  boards:
+  - {fileID: 1222399504061488, guid: 5bfb15e07c0483246899b7e11be6b223, type: 2}

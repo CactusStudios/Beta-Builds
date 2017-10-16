@@ -14,17 +14,17 @@ public class GameManager : MonoBehaviour {
 	}
 
 	void initGame(){
-		boardScript.SetupScene (1);
+		boardScript.setupScene (0);//default to 0 for the homeworld board
 		Debug.Log ("Board Created");
 	}
 
 	void reset(){
-		boardScript.Deactivate();
-		boardScript.SetupScene (1);
+		//boardScript.deactivate();
+		boardScript.setupScene (0);
 		Debug.Log ("Board Reset");
 	}
 
-
+	/*
 	// Update is called once per frame
 	void Update () {
 
@@ -34,4 +34,5 @@ public class GameManager : MonoBehaviour {
 
 		}
 	}
+	*/
 }

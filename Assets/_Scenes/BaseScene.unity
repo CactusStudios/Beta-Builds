@@ -147,16 +147,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 114496203321490478, guid: 984c42d75bde0704a976b157b4e7eb00,
-        type: 2}
-      propertyPath: wallCount.minimum
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 114496203321490478, guid: 984c42d75bde0704a976b157b4e7eb00,
-        type: 2}
-      propertyPath: wallCount.maximum
-      value: 15
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 984c42d75bde0704a976b157b4e7eb00, type: 2}
   m_IsPrefabParent: 0
@@ -313,6 +303,21 @@ Prefab:
       propertyPath: player
       value: 
       objectReference: {fileID: 1229283631}
+    - target: {fileID: 20449393194486926, guid: d228fe94e0b513e48a600a7b37660810,
+        type: 2}
+      propertyPath: m_BackGroundColor.r
+      value: 0.27205884
+      objectReference: {fileID: 0}
+    - target: {fileID: 20449393194486926, guid: d228fe94e0b513e48a600a7b37660810,
+        type: 2}
+      propertyPath: m_BackGroundColor.g
+      value: 0.24805366
+      objectReference: {fileID: 0}
+    - target: {fileID: 20449393194486926, guid: d228fe94e0b513e48a600a7b37660810,
+        type: 2}
+      propertyPath: m_BackGroundColor.b
+      value: 0.24805366
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d228fe94e0b513e48a600a7b37660810, type: 2}
   m_IsPrefabParent: 0
