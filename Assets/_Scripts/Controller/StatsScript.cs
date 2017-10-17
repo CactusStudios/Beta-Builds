@@ -19,6 +19,7 @@ public class StatsScript : MonoBehaviour {
     public Slider xpSlider;
 
     PlayerController PlayerController;
+    public DeathMenu deathMenu;
 
     // Use this for initialization
     void Start ()
@@ -84,6 +85,7 @@ public class StatsScript : MonoBehaviour {
     public void death()
     {
         isDead = true;
+        deathMenu.ToggleEndMenu();
     }
 
     public void TakeMana(int amount)
@@ -112,7 +114,6 @@ public class StatsScript : MonoBehaviour {
 
     public void GiveMana(int amount)
     {
-        
         currentMana += amount;
 
         if(currentMana > (level * 10) + mana)

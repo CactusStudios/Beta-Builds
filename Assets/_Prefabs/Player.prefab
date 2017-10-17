@@ -143,6 +143,7 @@ MonoBehaviour:
   healthSlider: {fileID: 0}
   manaSlider: {fileID: 0}
   xpSlider: {fileID: 0}
+  deathMenu: {fileID: 0}
 --- !u!114 &114742469390155770
 MonoBehaviour:
   m_ObjectHideFlags: 1
