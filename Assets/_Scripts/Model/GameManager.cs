@@ -5,7 +5,8 @@ using UnityEngine;
 public class GameManager : MonoBehaviour {
 
 	public BoardManager boardScript;
-
+	public GameObject player;
+	public GameObject HUD;
 
 	// Use this for initialization
 	void Awake () {
@@ -14,8 +15,17 @@ public class GameManager : MonoBehaviour {
 	}
 
 	void initGame(){
+		
 		boardScript.setupScene (0);//default to 0 for the homeworld board
 		Debug.Log ("Board Created");
+
+		GameObject playerObject = new GameObject ("Player");
+		playerObject = Instantiate (player, new Vector3 (0f, 0f, 0f), Quaternion.identity) as GameObject;
+		Debug.Log("Player Generated");
+
+		GameObject HUDObject = new GameObject ("HUD");
+		HUDObject = Instantiate (HUD, new Vector3 (0f, 0f, 0f), Quaternion.identity) as GameObject;
+		Debug.Log("HUD Generated");
 	}
 
 	void reset(){
