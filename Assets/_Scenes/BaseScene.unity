@@ -150,7 +150,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4111625543299848, guid: 984c42d75bde0704a976b157b4e7eb00, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 984c42d75bde0704a976b157b4e7eb00, type: 2}
@@ -239,7 +239,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4026658260200882, guid: 75a5fe1ef73a62a4981ae131c37d1308, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114489360794909240, guid: 75a5fe1ef73a62a4981ae131c37d1308,
         type: 2}
@@ -310,7 +310,7 @@ Prefab:
     - target: {fileID: 224327830036739778, guid: 1570656fd067ca9429681fe618a29a53,
         type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 224327830036739778, guid: 1570656fd067ca9429681fe618a29a53,
         type: 2}
@@ -365,27 +365,27 @@ Prefab:
     - target: {fileID: 224583033311697478, guid: 1570656fd067ca9429681fe618a29a53,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224583033311697478, guid: 1570656fd067ca9429681fe618a29a53,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224357062833406948, guid: 1570656fd067ca9429681fe618a29a53,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224357062833406948, guid: 1570656fd067ca9429681fe618a29a53,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224713087896767688, guid: 1570656fd067ca9429681fe618a29a53,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1570656fd067ca9429681fe618a29a53, type: 2}
@@ -396,6 +396,100 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1310690795}
   m_Script: {fileID: -113659843, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!1001 &1391771585
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4638594660235910, guid: 33aa7a96e13f1664a86a21aae24eb172, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 2.09056
+      objectReference: {fileID: 0}
+    - target: {fileID: 4638594660235910, guid: 33aa7a96e13f1664a86a21aae24eb172, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.8022063
+      objectReference: {fileID: 0}
+    - target: {fileID: 4638594660235910, guid: 33aa7a96e13f1664a86a21aae24eb172, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.581
+      objectReference: {fileID: 0}
+    - target: {fileID: 4638594660235910, guid: 33aa7a96e13f1664a86a21aae24eb172, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4638594660235910, guid: 33aa7a96e13f1664a86a21aae24eb172, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4638594660235910, guid: 33aa7a96e13f1664a86a21aae24eb172, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4638594660235910, guid: 33aa7a96e13f1664a86a21aae24eb172, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4638594660235910, guid: 33aa7a96e13f1664a86a21aae24eb172, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1208769961264536, guid: 33aa7a96e13f1664a86a21aae24eb172, type: 2}
+      propertyPath: m_Name
+      value: Enemy
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114162783829355886, guid: 33aa7a96e13f1664a86a21aae24eb172, type: 2}
+    - {fileID: 114455438440949086, guid: 33aa7a96e13f1664a86a21aae24eb172, type: 2}
+    - {fileID: 114788259461758096, guid: 33aa7a96e13f1664a86a21aae24eb172, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: 33aa7a96e13f1664a86a21aae24eb172, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1 &1562815747 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1208769961264536, guid: 33aa7a96e13f1664a86a21aae24eb172,
+    type: 2}
+  m_PrefabInternal: {fileID: 1391771585}
+--- !u!114 &1562815748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1562815747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d49b10c19ec457f4ab56f7d4a2503e17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1562815749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1562815747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10e75ad905a9729498b480673731717b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1562815750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1562815747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2275b80963b99be47b871d4558792804, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 24428475}
+  bulletPrefab: {fileID: 1871913118573452, guid: a7d8dcc7e4f50574cbc46e9e434b981c,
+    type: 2}
+  bulletSpawn: {fileID: 0}
+  attackSpeed: 1
+  bulletSpeed: 2
+  lifeTime: 5
 --- !u!114 &2024824643 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114263361220277872, guid: 1570656fd067ca9429681fe618a29a53,
