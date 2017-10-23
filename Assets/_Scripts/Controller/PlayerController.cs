@@ -31,13 +31,11 @@ public class PlayerController : MonoBehaviour {
 			transform.Translate (new Vector3 (Input.GetAxisRaw ("Horizontal") * moveSpeed * Time.deltaTime, 0f, 0f));
 			isMoving = true;
 			lastMove = new Vector2 (Input.GetAxisRaw ("Horizontal"), 0f);
-			Debug.Log ("Move x");
 		}
 		if (Input.GetAxisRaw ("Vertical") > 0f || Input.GetAxisRaw ("Vertical") < 0f) {
 			transform.Translate (new Vector3 (0f, Input.GetAxisRaw ("Vertical") * moveSpeed * Time.deltaTime, 0f));
 			isMoving = true;
 			lastMove = new Vector2 (0f, Input.GetAxisRaw ("Vertical"));
-			Debug.Log ("Move y");
 		}
 
 		//sets direction for when the player stops moving

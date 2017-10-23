@@ -33,16 +33,4 @@ public class GameManager : MonoBehaviour {
 		boardScript.setupScene (0);
 		Debug.Log ("Board Reset");
 	}
-
-	/*
-	// Update is called once per frame
-	void Update () {
-
-		if (Input.GetKeyDown ("p")) {
-			Debug.Log ("Reset Called");
-			reset ();
-
-		}
-	}
-	*/
 }

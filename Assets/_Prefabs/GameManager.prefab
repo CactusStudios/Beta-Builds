@@ -54,7 +54,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boardScript: {fileID: 114802648955140334}
   player: {fileID: 1729501000895616, guid: 75a5fe1ef73a62a4981ae131c37d1308, type: 2}
-  camera: {fileID: 20449393194486926, guid: d228fe94e0b513e48a600a7b37660810, type: 2}
   HUD: {fileID: 1641656087825114, guid: 1570656fd067ca9429681fe618a29a53, type: 2}
 --- !u!114 &114802648955140334
 MonoBehaviour:
@@ -69,3 +68,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boards:
   - {fileID: 1222399504061488, guid: 5bfb15e07c0483246899b7e11be6b223, type: 2}
+  portal: {fileID: 1863415639174924, guid: c18a0f2564e7a2a43b264aec24a7d26c, type: 2}

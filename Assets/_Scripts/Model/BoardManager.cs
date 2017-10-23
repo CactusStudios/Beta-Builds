@@ -10,6 +10,7 @@ public class BoardManager : MonoBehaviour {
 	private Transform boardHolder;
 
 
+
 	public void boardSetup(int boardNumber){
 		board = new GameObject ("Board");
 		boardHolder = board.transform;
@@ -26,7 +27,6 @@ public class BoardManager : MonoBehaviour {
 	/*public void deactivate(){
 		Destory (board);
 	}*/
-
 
 	// Use this for initialization
 	void Start () {
