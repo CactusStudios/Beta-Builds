@@ -18,19 +18,20 @@ public class GameManager : MonoBehaviour {
 		
 		boardScript.setupScene (0);//default to 0 for the homeworld board
 		Debug.Log ("Board Created");
-
-		/*
-		GameObject playerObject = Instantiate (player, new Vector3 (0f, 0f, 0f), Quaternion.identity) as GameObject;
-		Debug.Log("Player Generated");
-
-		GameObject HUDObject = Instantiate (HUD, new Vector3 (0f, 0f, 0f), Quaternion.identity) as GameObject;
-		Debug.Log("HUD Generated");
-		*/
+		
 	}	
 
 	void reset(){
-		//boardScript.deactivate();
+		boardScript.deactivate();
 		boardScript.setupScene (0);
 		Debug.Log ("Board Reset");
 	}
+
+    void Update()
+    {
+        if (Input.GetKeyDown("space"))
+        {
+            reset();
+        }
+    }
 }

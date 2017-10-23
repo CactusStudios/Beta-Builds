@@ -68,4 +68,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boards:
   - {fileID: 1222399504061488, guid: 5bfb15e07c0483246899b7e11be6b223, type: 2}
-  portal: {fileID: 1863415639174924, guid: c18a0f2564e7a2a43b264aec24a7d26c, type: 2}

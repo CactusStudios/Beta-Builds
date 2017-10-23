@@ -24,17 +24,9 @@ public class BoardManager : MonoBehaviour {
 		boardSetup (boardNumber);
 	}
 
-	/*public void deactivate(){
-		Destory (board);
-	}*/
-
-	// Use this for initialization
-	void Start () {
-		
-	}
+    public void deactivate()
+    {
+        Destroy(board.gameObject);
+    }
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }
