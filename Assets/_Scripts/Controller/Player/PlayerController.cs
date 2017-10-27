@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour {
 
     private Animator anim;
 
+	private GameManager gm;
 
     private bool isMoving;
     private Vector2 lastMove;
@@ -17,7 +18,8 @@ public class PlayerController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         anim = GetComponent<Animator>();
-
+		gm = GetComponentInParent<GameManager>();
+		//gm = GameObject.Find("GameManager").GetComponent("GameManager");
 	}
 	
 	// Update is called once per frame
@@ -46,6 +48,22 @@ public class PlayerController : MonoBehaviour {
         anim.SetFloat("LastMoveY", lastMove.y);
 
     }
+
+	//controlls the interact option
+	void OnTriggerStay2D(Collider2D other)
+	{
+		if (other.CompareTag("Unmoveable"))
+		{
+			
+			gm.interaction ("String");
+		}
+	}
+
+	public void resetPlayer(){
+
+		transform.SetPositionAndRotation (new Vector3 (0f, 0f, 0f),Quaternion.identity);
+
+	}
 
 }
 

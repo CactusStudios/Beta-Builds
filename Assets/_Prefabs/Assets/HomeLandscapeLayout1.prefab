@@ -26,8 +26,7 @@ GameObject:
   - component: {fileID: 61165130518102046}
   - component: {fileID: 61009713228593218}
   - component: {fileID: 61149411974869672}
-  - component: {fileID: 114012365000062810}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HomeLandscapeLayout1
   m_TagString: Unmoveable
   m_Icon: {fileID: 0}
@@ -160,7 +159,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.49776402, y: -3.505892}
+  m_Offset: {x: 5.7455635, y: -0.49903846}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -171,7 +170,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.0114205, y: 1.0025382}
+  m_Size: {x: 0.90527344, y: 1.0539365}
   m_EdgeRadius: 0
 --- !u!61 &61165130518102046
 BoxCollider2D:
@@ -198,17 +197,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9348526, y: 12}
   m_EdgeRadius: 0
---- !u!114 &114012365000062810
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1222399504061488}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3df61c112f7aa24ca7407f3599d27da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &212499979121720638
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -218,7 +206,6 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -234,7 +221,6 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -243,7 +229,7 @@ SpriteRenderer:
   m_SortingLayerID: 713590101
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4dc94e713bacc9a43be385ebd19239cd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5a08cdd2c50e8bb4db0dcba19bfcadb0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
