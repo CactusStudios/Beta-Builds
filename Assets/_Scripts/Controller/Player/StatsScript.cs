@@ -2,21 +2,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+
 
 public class StatsScript : MonoBehaviour {
-	public int health = 100;
-	public int mana = 100;
-    public int level = 1;
-    public int currentHealth;
-    public int currentMana;
-    public int currentXp;
-    public int xpCap = 83;
+	private int health = 100;
+    private int mana = 100;
+    private int level = 1;
+    private int currentHealth;
+    private int currentMana;
+    private int currentXp;
+    private int xpCap;
     public bool damage;
     public bool isDead;
-    public Slider healthSlider;
-    public Slider manaSlider;
-    public Slider xpSlider;
+
 
     PlayerController PlayerController;
 
@@ -24,6 +22,8 @@ public class StatsScript : MonoBehaviour {
     void Start ()
     {
      //   PlayerController = GetComponent<moveSpeed> ();
+
+        xpCap = 83;
 
         currentHealth = health;
         currentMana = mana;
@@ -58,9 +58,39 @@ public class StatsScript : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.X))
         {
             GainXp(100);
-            Debug.Log("Health Loss");
+            Debug.Log("XP Gain");
         }
     }
+
+    public int getHealth(){
+        return this.currentHealth;
+    }
+
+    public int getMana()
+    {
+        return this.currentMana;
+    }
+
+    public int getMaxHealth()
+    {
+        return this.health;
+    }
+
+    public int getMaxMana()
+    {
+        return this.mana;
+    }
+
+    public int getExp()
+    {
+        return this.currentXp;
+    }
+
+    public int getMaxExp()
+    {
+        return this.xpCap;
+    }
+
 
     public void TakeDamage(int amount)
     {
@@ -72,8 +102,6 @@ public class StatsScript : MonoBehaviour {
         {
             currentHealth = 0;
         }
-
-        healthSlider.value = currentHealth;
 
         if(currentHealth <= 0 && !isDead)
         {
@@ -95,7 +123,6 @@ public class StatsScript : MonoBehaviour {
             currentMana = 0;
         }
 
-        manaSlider.value = currentMana;
     }
 
     public void GiveHealth(int amount)
@@ -106,8 +133,6 @@ public class StatsScript : MonoBehaviour {
         {
             currentHealth = 100;
         }
-
-        healthSlider.value = currentHealth;
     }
 
     public void GiveMana(int amount)
@@ -120,7 +145,6 @@ public class StatsScript : MonoBehaviour {
             currentMana = 100;
         }
 
-        manaSlider.value = currentMana;
     }
 
     public void GainXp(int amount)
@@ -133,7 +157,6 @@ public class StatsScript : MonoBehaviour {
             currentXp = 0;
         }
 
-        xpSlider.value = currentXp;
     }
 
     private void LevelUp()
@@ -149,13 +172,8 @@ public class StatsScript : MonoBehaviour {
 
         xpCap += (xpCap * 10) / 4;
 
-        xpSlider.maxValue = xpCap;
-
         health = (level * 10) + health;
         mana = (level * 10) + mana;
-
-        healthSlider.maxValue = health;
-        manaSlider.maxValue = mana;
 
         currentHealth = health;
         currentMana = mana;

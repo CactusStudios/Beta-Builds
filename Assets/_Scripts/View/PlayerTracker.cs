@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class PlayerTracker : MonoBehaviour {
 
-	public GameObject player;
+	private GameObject player;
+
+    private GameManager gm;
 
 
 	private Vector3 offset;
@@ -12,6 +14,11 @@ public class PlayerTracker : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
+        //set up communication wiht the Game Manager
+        gm = GetComponentInParent<GameManager>();
+
+        //retrieve player instance
+        this.player = gm.getPlayer();
 
 		offset = transform.position - player.transform.position;
 
@@ -23,4 +30,6 @@ public class PlayerTracker : MonoBehaviour {
 		transform.position = player.transform.position + offset;
 
 	}
+
+
 }

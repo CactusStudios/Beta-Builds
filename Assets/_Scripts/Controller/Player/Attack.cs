@@ -5,15 +5,18 @@ using UnityEngine;
 public class Attack : MonoBehaviour {
 
     public GameObject bulletPrefab;
-    public Transform bulletSpawn;
-	public float attackSpeed;
-	public int bulletSpeed;
+    private Transform bulletSpawn;
+	private float attackSpeed;
+	private int bulletSpeed;
 	private float lastShotTime;
-	public float lifeTime;
+	private float lifeTime;
 
     // Use this for initialization
     void Start () {
 		lastShotTime = 0.0f;
+        attackSpeed = 10;
+        bulletSpeed = 15;
+        lifeTime = 0.5f;
 	}
 	
 	// Update is called once per frame

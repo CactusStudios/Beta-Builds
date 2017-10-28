@@ -5,13 +5,40 @@ using UnityEngine;
 public class GameManager : MonoBehaviour {
 
 	private BoardManager boardScript;
-	private PlayerController player;
+	private PlayerController playerController;
+
+    public GameObject player;
+    private GameObject playerInstance;
+
+    public Camera camera;
+    private Camera cameraInstance;
+
+    public GameObject HUD;
+    private GameObject hudInstance;
+
+
+
+
 
 	// Use this for initialization
 	void Awake () {
-		boardScript = GetComponent<BoardManager>();
-		player = GetComponentInChildren<PlayerController> ();
 
+        //Instanciate Prefabs
+        
+        playerInstance = Instantiate(player, new Vector2(0f,0f), Quaternion.identity);
+        playerInstance.transform.parent = this.gameObject.transform;
+
+        cameraInstance = Instantiate(camera, new Vector3(0f, 0f, -10f), Quaternion.identity);
+        cameraInstance.transform.parent = this.gameObject.transform;
+
+        hudInstance = Instantiate(HUD, new Vector2(333f,229f), Quaternion.identity);
+        hudInstance.transform.SetParent(this.gameObject.transform);
+
+		boardScript = GetComponent<BoardManager>();
+		playerController = GetComponentInChildren<PlayerController> ();
+
+
+        //Initialise the game
 		initGame ();
 	}
 
@@ -36,6 +63,12 @@ public class GameManager : MonoBehaviour {
         }
     }
 
+    public GameObject getPlayer()
+    {
+        return this.playerInstance;
+    }
+
+
 	//Interaction function controls interaction between player and other outside objects
 	public void interaction(string tag){
 
@@ -48,7 +81,7 @@ public class GameManager : MonoBehaviour {
 
 			//if (Input.GetKeyDown ("e")) {
 
-				player.resetPlayer ();
+                playerController.resetPlayer();
 				reset ();
 			//}
 

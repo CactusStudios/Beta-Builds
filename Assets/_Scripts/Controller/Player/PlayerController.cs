@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
-    public float moveSpeed;
-
-    //private float moveSpeed = 1.0f;
+    private float moveSpeed = 5.0f;
 
     private Animator anim;
 
