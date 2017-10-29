@@ -10,6 +10,7 @@ public class BoardManager : MonoBehaviour {
 	private Transform boardHolder;
 
 
+
 	public void boardSetup(int boardNumber){
 		board = new GameObject ("Board");
 		boardHolder = board.transform;
@@ -23,18 +24,9 @@ public class BoardManager : MonoBehaviour {
 		boardSetup (boardNumber);
 	}
 
-	/*public void deactivate(){
-		Destory (board);
-	}*/
-
-
-	// Use this for initialization
-	void Start () {
-		
-	}
+    public void deactivate()
+    {
+        Destroy(board.gameObject);
+    }
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }
