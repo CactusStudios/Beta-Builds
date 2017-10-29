@@ -10,6 +10,7 @@ public class UIControl : MonoBehaviour {
     public Slider manaSlider;
     public Slider xpSlider;
     public GameObject loadingScreen;
+    private GameObject screenInstance;
 
     //Scripts
     private GameManager gm;
@@ -43,9 +44,24 @@ public class UIControl : MonoBehaviour {
 
 	}
 
-    void runLoadingScreen()
+    //Instanciate the loading screen
+    public void runLoadingScreen(float time)
     {
-        //do things
+        screenInstance = Instantiate(loadingScreen, new Vector2(0f, 0f), Quaternion.identity);
+        screenInstance.transform.SetParent(gm.gameObject.transform);
+        Debug.Log("Screen Built");
+
+        //begins a separate thread to run the screeen while loadings happen in the background
+        StartCoroutine(dramaticWait(time));
+       
+    }
+
+    private IEnumerator dramaticWait(float time)
+    {
+        Debug.Log("Screen started");
+        yield return new WaitForSeconds(time);
+        Destroy(screenInstance);
+        Debug.Log("Screen ended");
     }
 
 

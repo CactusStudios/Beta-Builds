@@ -664,6 +664,8 @@ MonoBehaviour:
   manaSlider: {fileID: 114719978151463924, guid: b6c0c48d668b484499dfe0fd960721ac,
     type: 2}
   xpSlider: {fileID: 114554610394253460, guid: cda744353d41f07409f3e373596f5753, type: 2}
+  loadingScreen: {fileID: 1093317866207292, guid: 6f80098dcbb1254478f982eb475bb266,
+    type: 2}
 --- !u!114 &114864095944204926
 MonoBehaviour:
   m_ObjectHideFlags: 1

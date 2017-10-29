@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour {
 
 	private BoardManager boardScript;
 	private PlayerController playerController;
+    private UIControl uiControl;
 
     public GameObject player;
     private GameObject playerInstance;
@@ -36,22 +37,27 @@ public class GameManager : MonoBehaviour {
 
 		boardScript = GetComponent<BoardManager>();
 		playerController = GetComponentInChildren<PlayerController> ();
+        uiControl = GetComponentInChildren<UIControl>();
 
 
         //Initialise the game
-		initGame ();
+        initBoard(0);
 	}
 
-	void initGame(){
-		
-		boardScript.setupScene (0);//default to 0 for the homeworld board
+	void initBoard(int sceneNumber){
+
+        boardScript.setupScene(sceneNumber);//default to 0 for the homeworld board
 		Debug.Log ("Board Created");
 		
 	}	
 
+
+    //needs a timer
 	void reset(){
+        uiControl.runLoadingScreen(3.0f);
+        playerController.resetPlayer();
 		boardScript.deactivate();
-		boardScript.setupScene (0);
+        initBoard(0);
 		Debug.Log ("Board Reset");
 	}
 
@@ -81,7 +87,7 @@ public class GameManager : MonoBehaviour {
 
 			//if (Input.GetKeyDown ("e")) {
 
-                playerController.resetPlayer();
+                
 				reset ();
 			//}
 
