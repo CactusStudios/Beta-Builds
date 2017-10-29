@@ -51,8 +51,6 @@ public class GameManager : MonoBehaviour {
 		
 	}	
 
-
-    //needs a timer
 	void reset(){
         uiControl.runLoadingScreen(3.0f);
         playerController.resetPlayer();
