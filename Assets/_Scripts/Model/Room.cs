@@ -2,11 +2,7 @@
 using System;
 using System.Xml;
 
-<<<<<<< HEAD
-public class Room
-=======
 public class Room : ScriptableObject
->>>>>>> Cain
 {
     public GameObject floorTile;
     public GameObject wallTile;
