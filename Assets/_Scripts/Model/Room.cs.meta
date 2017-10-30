@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 0e11136aaebae2745a45f47d8d2a35f6
-timeCreated: 1509355380
+guid: dd7cd21234cffc241b41c3d8234e05e7
+timeCreated: 1509348331
 licenseType: Free
 MonoImporter:
   externalObjects: {}
@@ -10,8 +10,6 @@ MonoImporter:
       type: 2}
   - wallTile: {fileID: 1444550576621106, guid: d35b2297209f39241a91ad0c30f27cfa, type: 2}
   - nothing: {fileID: 1974418371720404, guid: 26ea17148fbf8594c90007b7d6197775, type: 2}
-  - board: {instanceID: 0}
-  - boardHolder: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
