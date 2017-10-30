@@ -19,8 +19,8 @@ public class BoardManager : MonoBehaviour {
 		instance.transform.SetParent (boardHolder);
 	}
 
-	public void setupScene(int boardNumber){
-
+	public void setupScene(int boardNumber)
+    {
 		boardSetup (boardNumber);
 	}
 

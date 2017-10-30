@@ -1,24 +1,21 @@
 ﻿using UnityEngine;
 using System;
 using System.Xml;
-using System.Collections.Generic;
 
-public class Room : MonoBehaviour
+public class Room : ScriptableObject
 {
     public GameObject floorTile;
     public GameObject wallTile;
+    public GameObject nothing;
     public int width;
     public int height;
 
     private XmlNode thisRoom;
     private GameObject room;
     private Transform roomHolder;
-    private List<Vector3> gridPositions;
 
-
-    public Room (XmlNode thisRoom, bool n, bool s, bool e, bool w)
+    public void with (XmlNode thisRoom, bool n, bool s, bool e, bool w)
     {
-        gridPositions = new List<Vector3>();
         this.thisRoom = thisRoom;
         height = Int32.Parse(thisRoom.Attributes["HEIGHT"].InnerText);
         width = Int32.Parse(thisRoom.Attributes["WIDTH"].InnerText);
@@ -27,6 +24,12 @@ public class Room : MonoBehaviour
             " with layout:\n" +
             thisRoom["LAYOUT"].InnerText;
         Debug.Log(whatToMake);
+
+        Start();
+    }
+
+    public GameObject getRoom() {
+        return room;
     }
 
     public void Start()
@@ -34,12 +37,13 @@ public class Room : MonoBehaviour
         room = new GameObject("Room");
         roomHolder = room.transform;
 
+        // problem block
         int stringIndex = 0;
         for (int i = 0; i < height; i++)
         {
             for (int j = 0; j < width; j++)
             {
-                GameObject toInstantiate = null;
+                GameObject toInstantiate = nothing;
                 switch (thisRoom["LAYOUT"].InnerText[stringIndex]) // look at the character in a specific place in the layout text
                 {
                     case 'W':
@@ -47,6 +51,8 @@ public class Room : MonoBehaviour
                         break;
                     case 'F':
                         toInstantiate = floorTile;
+                        break;
+                    default:
                         break;
                 }
 
