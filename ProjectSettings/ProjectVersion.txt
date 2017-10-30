@@ -1,1 +1,9 @@
+<<<<<<< HEAD
 m_EditorVersion: 2017.2.0f3
+=======
+<<<<<<< HEAD
+m_EditorVersion: 2017.2.0f3
+=======
+m_EditorVersion: 2017.1.1f1
+>>>>>>> d5f27964b03983c660c1fd61f8610a3e0f62526b
+>>>>>>> master

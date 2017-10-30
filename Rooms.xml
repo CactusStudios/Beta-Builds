@@ -1,13 +1,8 @@
-<<<<<<< HEAD
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <MAP>
   <MAP NUMROOMS = "3"/>
   <ROOM>
     <ROOM ID = "0"/> /// The spawn room
-=======
-﻿<MAP NUMROOMS='3'>
-  <ROOM ID='0'>
->>>>>>> master
     <LAYOUT>
       WWWWWWWWW
       WFFFFFFFW
@@ -18,12 +13,8 @@
       WWWWWWWWW
     </LAYOUT>
   </ROOM>
-<<<<<<< HEAD
   <ROOM>
     <ROOM ID = "1"/> /// The boss room
-=======
-  <ROOM ID='1'>
->>>>>>> master
     <LAYOUT>
       WWWWWWWWW
       WFFFFFFFW
@@ -34,12 +25,8 @@
       WWWWWWWWW
     </LAYOUT>
   </ROOM>
-<<<<<<< HEAD
   <ROOM>
     <ROOM ID = "2"/>
-=======
-  <ROOM ID='2'>
->>>>>>> master
     <LAYOUT>
       WWWWWWWWW
       WFFFFFFFW
