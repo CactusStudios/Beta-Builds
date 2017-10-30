@@ -151,7 +151,39 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     m_RemovedComponents:
     - {fileID: 0}
+=======
+    - target: {fileID: 114310723286032888, guid: 40506e1d0a8a4944fb4c55a4f10a0c95,
+        type: 2}
+      propertyPath: rows
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114310723286032888, guid: 40506e1d0a8a4944fb4c55a4f10a0c95,
+        type: 2}
+      propertyPath: columns
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114310723286032888, guid: 40506e1d0a8a4944fb4c55a4f10a0c95,
+        type: 2}
+      propertyPath: wallTile
+      value: 
+      objectReference: {fileID: 1444550576621106, guid: d35b2297209f39241a91ad0c30f27cfa,
+        type: 2}
+    - target: {fileID: 114310723286032888, guid: 40506e1d0a8a4944fb4c55a4f10a0c95,
+        type: 2}
+      propertyPath: floorTile
+      value: 
+      objectReference: {fileID: 1422029186922816, guid: eed935185d2b8f9409d55ce1032c597a,
+        type: 2}
+    - target: {fileID: 114310723286032888, guid: 40506e1d0a8a4944fb4c55a4f10a0c95,
+        type: 2}
+      propertyPath: nothing
+      value: 
+      objectReference: {fileID: 1974418371720404, guid: 26ea17148fbf8594c90007b7d6197775,
+        type: 2}
+    m_RemovedComponents: []
+>>>>>>> Cain
   m_ParentPrefab: {fileID: 100100000, guid: 40506e1d0a8a4944fb4c55a4f10a0c95, type: 2}
   m_IsPrefabParent: 0

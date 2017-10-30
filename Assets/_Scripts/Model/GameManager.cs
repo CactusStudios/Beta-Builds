@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour {
         //boardGen = GetComponent<BoardGenerator>();
 
         //Initialise the game
-        initBoard(0);
+        //initBoard(0);
 	}
 
 	void initBoard(int sceneNumber){

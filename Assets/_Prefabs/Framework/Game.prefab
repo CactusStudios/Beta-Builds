@@ -53,10 +53,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3654fbcc7ba279148ad4c7a28f3d2a7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   player: {fileID: 1729501000895616, guid: 75a5fe1ef73a62a4981ae131c37d1308, type: 2}
   camera: {fileID: 20449393194486926, guid: d228fe94e0b513e48a600a7b37660810, type: 2}
   HUD: {fileID: 1641656087825114, guid: 1570656fd067ca9429681fe618a29a53, type: 2}
 --- !u!114 &114636753057396070
+=======
+  rows: 9
+  columns: 9
+  board: {fileID: 0}
+  boardHolder: {fileID: 0}
+--- !u!114 &114368285518165188
+>>>>>>> Cain
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
