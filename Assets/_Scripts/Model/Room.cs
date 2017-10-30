@@ -61,7 +61,7 @@ public class Room : ScriptableObject
 
                 
 
-                GameObject instance = Instantiate(toInstantiate, new Vector3(i, j, 0f), Quaternion.identity) as GameObject;
+                GameObject instance = Instantiate(toInstantiate, new Vector3(j, i, 0f), Quaternion.identity) as GameObject;
                 instance.transform.SetParent(roomHolder);
 
                 stringIndex++; // move to the next character in the string

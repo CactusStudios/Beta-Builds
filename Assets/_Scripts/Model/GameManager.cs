@@ -18,6 +18,8 @@ public class GameManager : MonoBehaviour {
     public GameObject HUD;
     private GameObject hudInstance;
 
+    private int sceneNumber;
+
 
 
 
@@ -41,13 +43,24 @@ public class GameManager : MonoBehaviour {
         uiControl = GetComponentInChildren<UIControl>();
         boardGen = GetComponent<BoardGenerator>();
 
+        sceneNumber = 0;
         //Initialise the game
-        //initBoard(0);
+        initBoard(sceneNumber);
 	}
 
 	void initBoard(int sceneNumber){
-
-        boardScript.setupScene(sceneNumber);//default to 0 for the homeworld board
+        
+        
+        if (sceneNumber != 0)
+        {
+            boardScript.deactivate();
+            boardGen.generate();
+        }
+        else
+        {
+            boardScript.setupScene(sceneNumber);//default to 0 for the homeworld board
+            boardGen.deactivate();
+        }
 		Debug.Log ("Board Created");
 		
 	}	
@@ -55,8 +68,15 @@ public class GameManager : MonoBehaviour {
 	void reset(){
         uiControl.runLoadingScreen(3.0f);
         playerController.resetPlayer();
-		boardScript.deactivate();
-        initBoard(0);
+		if (sceneNumber == 0)
+        {
+            sceneNumber++;
+        }
+        else
+        {
+            sceneNumber = 0;
+        }
+        initBoard(sceneNumber);
 		Debug.Log ("Board Reset");
 	}
 
