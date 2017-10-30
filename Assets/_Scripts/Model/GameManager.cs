@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour {
 	private BoardManager boardScript;
 	private PlayerController playerController;
     private UIControl uiControl;
-    private BoardGenerator boardGen;
+    //private BoardGenerator boardGen;
 
     public GameObject player;
     private GameObject playerInstance;
@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour {
 		boardScript = GetComponent<BoardManager>();
 		playerController = GetComponentInChildren<PlayerController> ();
         uiControl = GetComponentInChildren<UIControl>();
-        boardGen = GetComponent<BoardGenerator>();
+        //boardGen = GetComponent<BoardGenerator>();
 
         //Initialise the game
         initBoard(0);

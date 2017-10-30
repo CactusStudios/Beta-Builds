@@ -1,11 +1,13 @@
 fileFormatVersion: 2
 guid: dd7cd21234cffc241b41c3d8234e05e7
-timeCreated: 1509337733
+timeCreated: 1509347878
 licenseType: Free
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - floorTile: {instanceID: 0}
+  - wallTile: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

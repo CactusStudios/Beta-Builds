@@ -6,9 +6,9 @@ using UnityEngine.UI;
 public class UIControl : MonoBehaviour {
 
     //Components
-    public Slider healthSlider;
-    public Slider manaSlider;
-    public Slider xpSlider;
+    private Slider healthSlider;
+    private Slider manaSlider;
+    private Slider xpSlider;
     public GameObject loadingScreen;
     private GameObject screenInstance;
 
@@ -20,8 +20,14 @@ public class UIControl : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
+
+
         gm = GetComponentInParent<GameManager>();
         stats = gm.getPlayer().GetComponent<StatsScript>();
+
+        healthSlider = gameObject.transform.Find("HealthSlider").GetComponent<Slider>();
+        manaSlider = gameObject.transform.Find("ManaSlider").GetComponent<Slider>();
+        xpSlider = gameObject.transform.Find("XpSlider").GetComponent<Slider>();
 
         healthSlider.maxValue = stats.getMaxHealth();
         manaSlider.maxValue = stats.getMaxMana();
@@ -32,9 +38,9 @@ public class UIControl : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        //healthSlider.maxValue = stats.getMaxHealth();
-        //manaSlider.maxValue = stats.getMaxMana();
-        //xpSlider.maxValue = stats.getMaxExp();
+        healthSlider.maxValue = stats.getMaxHealth();
+        manaSlider.maxValue = stats.getMaxMana();
+        xpSlider.maxValue = stats.getMaxExp();
 
         //Sliders need to be initialised under the ui to accomodate visual changes
 

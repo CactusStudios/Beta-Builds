@@ -3,7 +3,7 @@ using System;
 using System.Xml;
 using System.Collections.Generic;
 
-public class Room
+public class Room : MonoBehaviour
 {
     public GameObject floorTile;
     public GameObject wallTile;
