@@ -4,9 +4,9 @@ using System.Xml;
 
 public class Room : ScriptableObject
 {
-    public GameObject floorTile;
-    public GameObject wallTile;
-    public GameObject nothing;
+    private GameObject floorTile;
+    private GameObject wallTile;
+    private GameObject nothing;
     public int width;
     public int height;
 
@@ -14,11 +14,14 @@ public class Room : ScriptableObject
     private GameObject room;
     private Transform roomHolder;
 
-    public void with (XmlNode thisRoom, bool n, bool s, bool e, bool w)
+    public void with(XmlNode thisRoom, bool n, bool s, bool e, bool w, GameObject floorTile, GameObject wallTile, GameObject nothing)
     {
         this.thisRoom = thisRoom;
         height = Int32.Parse(thisRoom.Attributes["HEIGHT"].InnerText);
         width = Int32.Parse(thisRoom.Attributes["WIDTH"].InnerText);
+        this.floorTile = floorTile;
+        this.wallTile = wallTile;
+        this.nothing = nothing;
 
         string whatToMake = "Creating room " + thisRoom.Attributes["ID"].InnerText +
             " with layout:\n" +
@@ -56,7 +59,9 @@ public class Room : ScriptableObject
                         break;
                 }
 
-                GameObject instance = MonoBehaviour.Instantiate(toInstantiate, new Vector3(i, j, 0f), Quaternion.identity) as GameObject;
+                
+
+                GameObject instance = Instantiate(toInstantiate, new Vector3(i, j, 0f), Quaternion.identity) as GameObject;
                 instance.transform.SetParent(roomHolder);
 
                 stringIndex++; // move to the next character in the string

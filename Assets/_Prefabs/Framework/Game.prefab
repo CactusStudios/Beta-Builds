@@ -55,6 +55,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rows: 9
   columns: 9
+  board: {fileID: 0}
+  boardHolder: {fileID: 0}
 --- !u!114 &114368285518165188
 MonoBehaviour:
   m_ObjectHideFlags: 1
